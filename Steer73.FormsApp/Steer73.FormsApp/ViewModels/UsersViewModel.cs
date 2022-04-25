@@ -1,7 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using Steer73.FormsApp.Framework;
+using Steer73.FormsApp.Interfaces;
 using Steer73.FormsApp.Model;
 
 namespace Steer73.FormsApp.ViewModels
@@ -10,6 +11,13 @@ namespace Steer73.FormsApp.ViewModels
     {
         private readonly IUserService _userService;
         private readonly IMessageService _messageService;
+
+        private ObservableCollection<User> _users = new ObservableCollection<User>();
+        public ObservableCollection<User> Users
+        {
+            get => _users;
+            set => SetProperty(ref value, _users);
+        }
 
         public UsersViewModel(
             IUserService userService,
@@ -23,10 +31,13 @@ namespace Steer73.FormsApp.ViewModels
         {
             try
             {
+                Message = "Loading users...";
                 IsBusy = true;
 
                 var users = await _userService.GetUsers();
-
+                
+                Users = new ObservableCollection<User>();
+                
                 foreach (var user in users)
                 {
                     Users.Add(user);
@@ -41,9 +52,5 @@ namespace Steer73.FormsApp.ViewModels
                 IsBusy = false;
             }
         }
-
-        public bool IsBusy { get; set; }
-
-        public ICollection<User> Users { get; } = new List<User>();
     }
 }

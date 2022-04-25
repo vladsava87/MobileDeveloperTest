@@ -8,7 +8,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc1f28f1-fe3e-4067-88f0-0ddcf5933af9" name="Changes" comment="" />
+    <list default="true" id="cc1f28f1-fe3e-4067-88f0-0ddcf5933af9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Steer73.FormsApp/Framework/BaseView.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Steer73.FormsApp/Framework/BaseView.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Steer73.FormsApp/Interfaces/IMessageService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Steer73.FormsApp/Interfaces/IUserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Steer73.FormsApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Steer73.FormsApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Steer73.FormsApp/Framework/MessageService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp/Services/MessageService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Steer73.FormsApp/Framework/ViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp/Framework/ViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Steer73.FormsApp/Model/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp/Services/UserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Steer73.FormsApp/Steer73.FormsApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp/Steer73.FormsApp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Steer73.FormsApp/ViewModels/UsersViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp/ViewModels/UsersViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Steer73.FormsApp/Views/UsersView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp/Views/UsersView.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Steer73.FormsApp/Views/UsersView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp/Views/UsersView.xaml.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,8 +32,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49954eb56c674e768be7a97e2a6794c343e00/40/c2a7fde5/It.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49954eb56c674e768be7a97e2a6794c343e00/d4/498c4072/Mock.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/49954eb56c674e768be7a97e2a6794c343e00/19/Mock.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
@@ -30,12 +43,19 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="225IYYIiAxowNjh3kdQk0Ik0TSg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502036" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="VirtualDevicePath@/Users/vlad/.android/avd/Pixel_2_API_30.avd" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2022-03-22T09:39:16.634292Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -74,6 +94,9 @@
       <updated>1639121069990</updated>
       <workItem from="1639121085619" duration="5088000" />
       <workItem from="1639468151453" duration="597000" />
+      <workItem from="1647935819873" duration="2435000" />
+      <workItem from="1650883924309" duration="125000" />
+      <workItem from="1650884084513" duration="3737000" />
     </task>
     <servers />
   </component>
@@ -93,38 +116,40 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Steer73.FormsApp/Model/UserService.cs</url>
-          <line>17</line>
-          <properties documentPath="$PROJECT_DIR$/Steer73.FormsApp/Model/UserService.cs" initialLine="17" containingFunctionPresentation="method 'GetUsers'">
+          <url>file://$PROJECT_DIR$/Steer73.FormsApp/ViewModels/UsersViewModel.cs</url>
+          <line>33</line>
+          <properties documentPath="$PROJECT_DIR$/Steer73.FormsApp/ViewModels/UsersViewModel.cs" initialLine="33" containingFunctionPresentation="method 'Initialize'">
             <startOffsets>
-              <option value="583" />
+              <option value="931" />
             </startOffsets>
             <endOffsets>
-              <option value="606" />
+              <option value="960" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Steer73.FormsApp/ViewModels/UsersViewModel.cs</url>
-          <line>23</line>
-          <properties documentPath="$PROJECT_DIR$/Steer73.FormsApp/ViewModels/UsersViewModel.cs" initialLine="23" containingFunctionPresentation="method 'Initialize'">
+          <url>file://$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs</url>
+          <line>49</line>
+          <properties documentPath="$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs" initialLine="49" containingFunctionPresentation="method 'InitializeShowErrorMessageOnFetchingError'">
             <startOffsets>
-              <option value="625" />
+              <option value="1446" />
             </startOffsets>
             <endOffsets>
-              <option value="1067" />
+              <option value="1475" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

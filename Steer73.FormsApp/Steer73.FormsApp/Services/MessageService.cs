@@ -1,7 +1,8 @@
 ﻿using System.Threading.Tasks;
+using Steer73.FormsApp.Interfaces;
 using Xamarin.Forms;
 
-namespace Steer73.FormsApp.Framework
+namespace Steer73.FormsApp.Services
 {
     public class MessageService : IMessageService
     {
@@ -9,10 +10,5 @@ namespace Steer73.FormsApp.Framework
         {
             return Application.Current.MainPage.DisplayAlert("FormsApp", message, "OK");
         }
-    }
-
-    public interface IMessageService
-    {
-        Task ShowError(string message); 
     }
 }

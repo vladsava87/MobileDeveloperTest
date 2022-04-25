@@ -11,6 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Behaviors.XamarinForms" Version="4.0.4" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
   </ItemGroup>
   <ItemGroup>
@@ -25,5 +26,11 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Model\" />
     <Folder Include="Framework\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Framework\BaseView.xaml.cs">
+      <DependentUpon>BaseView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -1,32 +1,29 @@
 ﻿using Steer73.FormsApp.Framework;
-using Steer73.FormsApp.Model;
+using Steer73.FormsApp.Services;
 using Steer73.FormsApp.ViewModels;
-using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace Steer73.FormsApp.Views
 {
-    public partial class UsersView : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class UsersView : BaseView
     {
+        private UsersViewModel _viewModel;
+        
         public UsersView()
         {
             InitializeComponent();
 
-            ViewModel = new UsersViewModel(
+            BindingContext = _viewModel = new UsersViewModel(
                 new UserService(),
                 new MessageService());
         }
 
         protected override async void OnAppearing()
         {
+            await _viewModel.Initialize();
+            
             base.OnAppearing();
-
-            await ViewModel.Initialize();
-        }
-
-        protected UsersViewModel ViewModel
-        {
-            get => BindingContext as UsersViewModel;
-            set => BindingContext = value;
         }
     }
 }

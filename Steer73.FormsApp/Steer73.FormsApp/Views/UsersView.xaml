@@ -1,8 +1,23 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<ContentPage
+<framework:BaseView
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:framework="clr-namespace:Steer73.FormsApp.Framework;assembly=Steer73.FormsApp"
     x:Class="Steer73.FormsApp.Views.UsersView">
-    <ContentPage.Content>
-    </ContentPage.Content>
-</ContentPage>
+    <framework:BaseView.MainContent> 
+        <CollectionView ItemsSource="{Binding Users}" 
+                        VerticalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal"
+                                 Padding="10">
+                        <Label Text="{Binding FirstName}"
+                               HorizontalOptions="StartAndExpand"/>
+                        <Label Text="{Binding LastName}"
+                               HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </framework:BaseView.MainContent>
+</framework:BaseView>

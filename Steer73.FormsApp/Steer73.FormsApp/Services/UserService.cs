@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Steer73.FormsApp.Interfaces;
+using Steer73.FormsApp.Model;
 
-namespace Steer73.FormsApp.Model
+namespace Steer73.FormsApp.Services
 {
     public class UserService : IUserService
     {
@@ -19,10 +21,5 @@ namespace Steer73.FormsApp.Model
 
             return await Task.FromResult(Users);
         }
-    }
-
-    public interface IUserService
-    {
-        Task<IEnumerable<User>> GetUsers();
     }
 }

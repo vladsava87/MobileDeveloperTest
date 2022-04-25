@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Name="basePage"
+             x:Class="Steer73.FormsApp.Framework.BaseView">
+    
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <ContentView Content="{Binding Source={x:Reference basePage}, Path=MainContent}"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"
+                         AbsoluteLayout.LayoutBounds="0,0,1,1"
+                         AbsoluteLayout.LayoutFlags="All">
+            </ContentView>
+
+            <ContentView IsVisible="{Binding Source={x:Reference basePage}, Path=BindingContext.IsBusy}" 
+                         Opacity="0.7"
+                         BackgroundColor="DimGray"
+                         HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                         AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" >
+
+                <Frame HorizontalOptions="CenterAndExpand"
+                       HasShadow="True"
+                       CornerRadius="10"
+                       VerticalOptions="CenterAndExpand">
+                    
+                    <StackLayout Orientation="Horizontal"
+                                 BackgroundColor="White">
+
+                        <ActivityIndicator Color="RoyalBlue"
+                                           Margin="10"
+                                           IsRunning="True" />
+
+                        <Label HorizontalTextAlignment="Start"
+                               VerticalTextAlignment="Center"
+                               Text="{Binding Source={x:Reference basePage}, Path=BindingContext.Message}"
+                               TextColor="Black"
+                               FontSize="18"/>
+
+                    </StackLayout>
+                </Frame>
+
+            </ContentView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
