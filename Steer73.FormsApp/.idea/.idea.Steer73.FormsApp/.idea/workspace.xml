@@ -9,9 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc1f28f1-fe3e-4067-88f0-0ddcf5933af9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Steer73.FormsApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Steer73.FormsApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Steer73.FormsApp/ViewModels/UsersViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp/ViewModels/UsersViewModel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +93,7 @@
       <workItem from="1647935819873" duration="2435000" />
       <workItem from="1650883924309" duration="125000" />
       <workItem from="1650884084513" duration="4710000" />
-      <workItem from="1650951528872" duration="675000" />
+      <workItem from="1650951528872" duration="1026000" />
     </task>
     <servers />
   </component>
@@ -126,44 +124,36 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs</url>
-          <line>57</line>
+          <line>54</line>
           <properties documentPath="$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs" initialLine="49" containingFunctionPresentation="method 'InitializeShowErrorMessageOnFetchingError'">
             <startOffsets>
-              <option value="1707" />
+              <option value="1660" />
             </startOffsets>
             <endOffsets>
-              <option value="1736" />
+              <option value="1689" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs</url>
-          <line>60</line>
+          <line>57</line>
           <properties documentPath="$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs" initialLine="60" containingFunctionPresentation="method 'InitializeShowErrorMessageOnFetchingError'">
             <startOffsets>
-              <option value="1787" />
+              <option value="1740" />
             </startOffsets>
             <endOffsets>
-              <option value="1814" />
+              <option value="1767" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs</url>
-          <line>62</line>
-          <properties documentPath="$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs" initialLine="62" containingFunctionPresentation="method 'InitializeShowErrorMessageOnFetchingError'">
-            <startOffsets>
-              <option value="1840" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1893" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#Moq.Mock" memberName="DefaultValue" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
