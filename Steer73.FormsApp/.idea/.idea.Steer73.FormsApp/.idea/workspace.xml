@@ -9,19 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc1f28f1-fe3e-4067-88f0-0ddcf5933af9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Steer73.FormsApp/Framework/BaseView.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Steer73.FormsApp/Framework/BaseView.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Steer73.FormsApp/Interfaces/IMessageService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Steer73.FormsApp/Interfaces/IUserService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Steer73.FormsApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Steer73.FormsApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Steer73.FormsApp/Framework/MessageService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp/Services/MessageService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Steer73.FormsApp/Framework/ViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp/Framework/ViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Steer73.FormsApp/Model/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp/Services/UserService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Steer73.FormsApp/Steer73.FormsApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp/Steer73.FormsApp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Steer73.FormsApp/ViewModels/UsersViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp/ViewModels/UsersViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Steer73.FormsApp/Views/UsersView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp/Views/UsersView.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Steer73.FormsApp/Views/UsersView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Steer73.FormsApp/Views/UsersView.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +20,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/49954eb56c674e768be7a97e2a6794c343e00/19/Mock.cs" root0="SKIP_HIGHLIGHTING" />
@@ -96,7 +94,8 @@
       <workItem from="1639468151453" duration="597000" />
       <workItem from="1647935819873" duration="2435000" />
       <workItem from="1650883924309" duration="125000" />
-      <workItem from="1650884084513" duration="3737000" />
+      <workItem from="1650884084513" duration="4710000" />
+      <workItem from="1650951528872" duration="675000" />
     </task>
     <servers />
   </component>
@@ -126,30 +125,43 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Steer73.FormsApp/ViewModels/UsersViewModel.cs</url>
-          <line>33</line>
-          <properties documentPath="$PROJECT_DIR$/Steer73.FormsApp/ViewModels/UsersViewModel.cs" initialLine="33" containingFunctionPresentation="method 'Initialize'">
-            <startOffsets>
-              <option value="931" />
-            </startOffsets>
-            <endOffsets>
-              <option value="960" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs</url>
-          <line>49</line>
+          <line>57</line>
           <properties documentPath="$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs" initialLine="49" containingFunctionPresentation="method 'InitializeShowErrorMessageOnFetchingError'">
             <startOffsets>
-              <option value="1446" />
+              <option value="1707" />
             </startOffsets>
             <endOffsets>
-              <option value="1475" />
+              <option value="1736" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs</url>
+          <line>60</line>
+          <properties documentPath="$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs" initialLine="60" containingFunctionPresentation="method 'InitializeShowErrorMessageOnFetchingError'">
+            <startOffsets>
+              <option value="1787" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1814" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs</url>
+          <line>62</line>
+          <properties documentPath="$PROJECT_DIR$/Steer73.FormsApp.Tests/ViewModels/UsersViewModelTests.cs" initialLine="62" containingFunctionPresentation="method 'InitializeShowErrorMessageOnFetchingError'">
+            <startOffsets>
+              <option value="1840" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1893" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

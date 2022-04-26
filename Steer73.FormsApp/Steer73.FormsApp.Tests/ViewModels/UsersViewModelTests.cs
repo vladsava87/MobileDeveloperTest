@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
@@ -31,8 +32,6 @@ namespace Steer73.FormsApp.Tests.ViewModels
             await viewModel.Initialize();
 
             userService.VerifyAll();
-
-            Assert.AreEqual(viewModel.Users, new ObservableCollection<User>());
         }
 
         [Test]
@@ -50,11 +49,15 @@ namespace Steer73.FormsApp.Tests.ViewModels
                 .Returns((Task<IEnumerable<User>>) null)
                 .Verifiable();
             
+            messageService
+                .Setup(p => p.ShowError("Object reference not set to an instance of an object."))
+                .Returns(Task.CompletedTask)
+                .Verifiable();
+            
             await viewModel.Initialize();
 
             userService.VerifyAll();
-            
-            Assert.AreEqual(userService.Object.GetUsers(), null);
+            messageService.VerifyAll();
         }
     }
 }
